@@ -119,4 +119,31 @@ switch($food){
     echo 'No food, I am hungry\n';
 }
 
+//switch without braak and excuting both cases
+$drink = 'water';
+switch($drink){
+    case 'water':
+        echo "Drinking Water\n";
+    case 'tea':
+        echo "Drinking tea\n";
+        break;
+}
+
+//single line conditionals in PHP(Ternary)
+$language = 'english';
+echo $language == 'spanish' ? "hola\n" : "hello\n";
+
+
+//chaining multiple checks in a row
+$IExist = "Variable exists\n";
+echo $IDonotExist ?? $IExist ?? "Neither variable is set\n";
+
+
+// While loop in PHP
+$num = 5;
+while ($num > 0){
+    echo " While loop $num\n";
+    --$num;
+}
+
 
