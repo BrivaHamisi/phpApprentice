@@ -194,5 +194,3 @@ echo $groceryList[1] . "\n";
 $car = ['make' => 'Toyota', 'model' => 'Camry'];
 echo $car['model'] . "\n";
 
-
-//FUNCTIONS
