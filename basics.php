@@ -146,4 +146,53 @@ while ($num > 0){
     --$num;
 }
 
+//Do while
+$num = 0;
+do{
+    echo "Do while $num\n";
+    ++$num;
+}
+while($num < 5);
 
+
+//for loop
+for ($i =0; $i<10; $i++){
+    echo "For loop $i\n";
+}
+
+$set = [1, 2, 3, 4, 5];
+foreach($set as $num){
+    echo "Array value $num\n";
+}
+
+//using break keyword to stop the execution
+$values = ['one', 'two', 'three'];
+foreach($values as $value){
+    if($value == 'two'){
+        break;
+    }
+    echo "Break $value\n";
+}
+
+//The continue keyword stops executing the  current loop iteration but then allow the loop to continue with other iterations
+$values = ['one', 'skip', 'three'];
+foreach($values as $value){
+    if($value == 'skip'){
+        continue;
+    }
+    echo "Continue $value\n";
+}
+
+//ARRAYS
+$tasklist = array('grocery store', 'change car oil');
+
+$groceryList = ['bread', 'milk', 'eggs'];
+echo $groceryList[0] . "\n";
+echo $groceryList[1] . "\n";
+
+//assoscitive array or a map
+$car = ['make' => 'Toyota', 'model' => 'Camry'];
+echo $car['model'] . "\n";
+
+
+//FUNCTIONS
