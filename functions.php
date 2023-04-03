@@ -37,3 +37,12 @@ class Bicycle{
 $bike = new Bicycle();
 $bike->color = 'Blue';
 echo $bike->color . "Bike Objects\n";
+
+
+class Tricycle{
+    public $color;
+
+    public function echoColor(){
+        echo $this->color . "\n";
+    }
+}
