@@ -10,7 +10,7 @@ hello_world();
 
 // Passing values to a function
 function greet($firstname, $lastname){
-    echo "helloe $firstname $lastname";
+    echo "hello $firstname $lastname";
 }
 
 greet('John', 'Smith');
@@ -29,3 +29,11 @@ $sum = function($a, $b){
     return $a + $b;
 };
 echo $sum(1, 2). "\n";
+
+//A class can define attributes and methods. An attribute is a piec of data stored on the class instance.
+class Bicycle{
+    public $color;
+}
+$bike = new Bicycle();
+$bike->color = 'Blue';
+echo $bike->color . "Bike Objects\n";
